@@ -23,4 +23,25 @@ when inside the build directory.
 
 
 Example of what can be seen when running the program with something with a circle shape in front of the camera:
+
 <img src="images/circle_detector_1.png" width="500">
+
+
+# How the program works: Hough Transforms
+
+This program is able to detect circles using Hough Transforms. The hough transform is a technique that can be used to isolate features of an image of a particular shape (lines, circles or any parametric curve and combination).
+
+!!!!! explicar com funciona la Hough Transform!!!!!!!
+
+
+Also the program gives information about the size and center of the circle so it can be used in numerous applications.
+
+References:
+
+http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm
+
+https://www.uio.no/studier/emner/matnat/ifi/INF4300/h09/undervisningsmateriale/hough09.pdf
+
+http://people.scs.carleton.ca/~c_shu/Courses/comp4900d/notes/lect10_hough.pdf
+
+https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/hough_lines/hough_lines.html
