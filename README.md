@@ -29,7 +29,7 @@ Example of what can be seen when running the program with something with a circl
 <img src="images/circle_detector_1.png" width="500">
 
 
-# How the program works: Hough Transforms
+## How the program works: Hough Transforms
 
 This program is able to detect circles using Hough Transforms. The hough transform is a technique that can be used to isolate features of an image of a particular shape (lines, circles or any parametric curve and combination).
 
