@@ -31,7 +31,15 @@ Example of what can be seen when running the program with something with a circl
 
 This program is able to detect circles using Hough Transforms. The hough transform is a technique that can be used to isolate features of an image of a particular shape (lines, circles or any parametric curve and combination).
 
-!!!!! explicar com funciona la Hough Transform!!!!!!!
+The Hough Transform uses the detection of edges as the points it will study (it tries to detect the shape on the edges shown in the image, it tries to find the relation between edge points), having this way all the lines in the image. 
+
+The shapes this transform can detect are the ones that can be descrived with a parametric equation (c + a1*x + b1*y + a2 *x^2 + b2*y^2 +etc =0).
+
+Given a shape we want to detect we know its parametric paramaters (for a line c=x*cos(theta)+y*sin(theta) so the parameters are c and theta, for a circle (x-a)^2+(y-b)^2=r^2 so the parameters are a, b and r). 
+
+What the Hough Transform does is it transforms each edge point (x_i, y_i) to the Hough space. The Hough space is the space of parameters (if for a line we fix x and y the c and theta can be written as the variables and in this case, fixing x and y will define a curve). For a shape with three parameters transforming a point to the Hough space would give a plane and for more parameters it would give higher dimensional shapes.
+
+This program transforms all the edge points to the Hough space and it is easy there to find the shapes because all the points that would be part of the same parametric equation if transformed to the Hough space intersect in a point or higher dimensioal shapes.
 
 
 Also the program gives information about the size and center of the circle so it can be used in numerous applications.
