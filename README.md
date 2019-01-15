@@ -2,7 +2,9 @@
 
 Exercise 2.2 of the Perception Systems course. Circle detection from online webcam images.
 
-Like in exercis 2.1, to have the program running first we need to do some things. We start by forking the git repository https://github.com/beta-robots/webcam_circles, cloning it to our computer with the command
+We have not updated the cpp file of this repository because no major changes were made. Changing the values of different parameters the colors and sizes of the circles and its centers can be changed. It can also be changed the minimud and maximum circle sizes detected which is important to test in order to minimize errors (for each application the results may be different). On the same topic we can also play with the gaussian blur parameter to change the noise filter.
+
+Like in exercise 2.1, to have the program running first we need to do some things. We start by forking the git repository https://github.com/beta-robots/webcam_circles, cloning it to our computer with the command
 
     $ git clone https://github.com/EloiSoldevilaDalmau/webcam_circles
 and building the point_capture example.
